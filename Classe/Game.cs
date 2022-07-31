@@ -66,7 +66,7 @@ namespace JogoForca
                 Forca(ref jogoGerado, ref frases, ref contErro);
 
                 Console.Write("\n\nDigite uma letra: ");
-                 letra = char.Parse(Console.ReadLine());
+                 char.TryParse(Console.ReadLine(), out letra); //recebe entrada de dados e trata pra não estourar um erro
 
                 for (int i = 0; i < split.Length; i++) {
 
